@@ -20,8 +20,12 @@ public class Enshu3_16 {
 		}
 		catch (InputMismatchException e) {
 			System.err.println("Aには整数を入力してください。");
+			stdIn.close();
 			return;
 		}
+		
+//補足：Aでaとか入力するとストップしちゃう→aいれたらまたAの入力できるようにするには
+//		for/while文使う！
 		
 		try {
 			System.out.print("整数 B : ");
@@ -29,6 +33,7 @@ public class Enshu3_16 {
 		}	
 			catch (InputMismatchException e) {
 				System.err.println("Bには整数を入力してください。");
+				stdIn.close();
 				return;
 			}
 		
