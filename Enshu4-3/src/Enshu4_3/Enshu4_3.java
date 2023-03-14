@@ -31,14 +31,19 @@ public class Enshu4_3 {
 		}
 
 		while(min<=max) {
-			System.out.print(max);
-			max--;
+			System.out.print(min);
+			min++;
 		}
 		
 		
 		
 	}
 	
+//大平さんアドバイスメモ
+//基本的に考え方はOK
+//この問題を見たときに、MAXとMINが同じだったらどういう処理にするか
+//についての記述がないことに違和感を感じるようになってほしい
+//境界値といれかえ（compare）のは最初は試しながら感覚をつかんでいくのでよい
 
 	
 }
