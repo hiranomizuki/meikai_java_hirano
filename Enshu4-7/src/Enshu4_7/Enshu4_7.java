@@ -34,11 +34,17 @@ import java.util.Scanner;
 					System.out.print('+');
 					countnumber++;
 				}
-			}
+				//大平さんなら・・偶数奇数で出しわけるそう。
+//				System.out.println('*');
+//				if(countnumber % 2 ==0)
+//					System.out.print('+');
+//				else if(countnumber % 2 != 0)
+//					System.out.println('+');
+					}
 
 		}
 	
-	
+
 	
 	
 	
