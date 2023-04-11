@@ -11,30 +11,32 @@ import java.util.Scanner;
 			int imputnumber;
 			try {
 					imputnumber = stdIn.nextInt();	
-			}catch(InputMismatchException e)
-			{
+			} 
+			catch(InputMismatchException e) {
 				System.err.print("値が不正です。範囲および型を確認してください。");
 				return;
-			}catch(NoSuchElementException e)
-			{
+			} 
+			catch(NoSuchElementException e){
 				System.err.print("値が不正です。範囲および型を確認してください。");
 				return;
-			}catch(IllegalStateException e)
-			{
+			} 
+			catch(IllegalStateException e){
 				System.err.print("不正または不適切なときにメソッドが呼び出されています。");
 				return;
-			}
+				} 
 			finally {
 				stdIn.close();
 			}
 			int i = 0;
 			while(i < imputnumber) {
-			if (imputnumber < 1) {
-				System.out.print('*');
-				i++;
-			}else
-				System.out.println('*');
-				i++;
+				if (imputnumber < 1)  {
+					System.out.print('*');
+					i++;
+				} 
+					else {
+						System.out.println('*');
+						i++;
+					}
 			}
 
 		}
