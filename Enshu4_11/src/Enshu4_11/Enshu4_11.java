@@ -7,7 +7,11 @@ import java.util.Scanner;
 public class Enshu4_11 {
 
 	public static void main(String[] args) {
-		System.out.print("0までカウントダウンします。正の整数値を入力してください。");
+		
+		//カウントダウンのおわりが0じゃなくなったときにも対応できるように
+		//standardnumberの変数をおく。（本当は外部ファイルが◎）
+		int standardnumber =0;
+		System.out.print(standardnumber+"までカウントダウンします。正の整数値を入力してください。");
 		Scanner stdIn = new Scanner(System.in);
 		
 		int inputnumber=0;
@@ -30,25 +34,13 @@ public class Enshu4_11 {
 		} 
 		finally {
 			stdIn.close();
-			
-	
-		for(int number=0 ;inputnumber>=0;inputnumber--)	
-			System.out.println(inputnumber);
-		
-			
-			
-			
-			
-			
-			
-			
 		}
-	
-	
-	
-	
-	
-	
+
+		int number;
+		
+		for(number = inputnumber ;number>=standardnumber;number--)	{
+			System.out.println(number);
+		}
 	
 	}	
 }
