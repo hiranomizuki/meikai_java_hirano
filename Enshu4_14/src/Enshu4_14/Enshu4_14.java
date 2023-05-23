@@ -33,28 +33,20 @@ public class Enshu4_14 {
 			
 		int sum = 0;
 		
-		//1を入力したとき、1+=1と表示されてしまうことを考慮
+		//最後の数字のとき、+=sumと表示されてしまうことを考慮
 		for(int number=1 ;inputnumber>=number;number++)	{
 			
-			if(inputnumber != 1) {
+			if(number != inputnumber) {
 				System.out.print(number+"+");
-				sum = sum + number;
 			}
-				else if(inputnumber == 1) {
-					System.out.print(inputnumber);
-					sum = sum + inputnumber;
-				}
-			
-			
+			else if( number == inputnumber) {
+				System.out.print(number);		
+			}
+			sum = sum + number;
 		}
 		
 		System.out.println("="+sum);
-			
-			
-			
-			
-			
-			
+				
 		}
 	
 	
