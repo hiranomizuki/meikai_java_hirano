@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Enshu4_14 {
 
 	public static void main(String[] args) {
-		System.out.print("0から入力値までの合計を表示します。正の整数値を入力してください。");
+		System.out.print("入力値までの合計を表示します。正の整数値を入力してください。");
 		Scanner stdIn = new Scanner(System.in);
 		
 		int inputnumber=0;
@@ -32,11 +32,22 @@ public class Enshu4_14 {
 			stdIn.close();
 			
 		int sum = 0;
+		
+		//1を入力したとき、1+=1と表示されてしまうことを考慮
 		for(int number=1 ;inputnumber>=number;number++)	{
-			System.out.print(number+"+");
-			sum = sum + number;
+			
+			if(inputnumber != 1) {
+				System.out.print(number+"+");
+				sum = sum + number;
+			}
+				else if(inputnumber == 1) {
+					System.out.print(inputnumber);
+					sum = sum + inputnumber;
+				}
+			
 			
 		}
+		
 		System.out.println("="+sum);
 			
 			
