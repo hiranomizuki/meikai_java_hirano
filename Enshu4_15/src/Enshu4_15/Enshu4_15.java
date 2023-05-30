@@ -17,8 +17,10 @@ public class Enshu4_15 {
 		try {
 			System.out.print("何cmから：");
 			fromheight = stdIn.nextInt();	
+			
 			System.out.print("何cmまで：");
 			toheight   = stdIn.nextInt();
+			
 			System.out.print("何cmごと:");
 			interval   = stdIn.nextInt();
 		} 
@@ -44,12 +46,10 @@ public class Enshu4_15 {
 		int sumheight = fromheight;
 		double averageweight = 0;
 		
-		//来週、150cm～表示されるように修正！
 		while(toheight > sumheight){
-			
-			sumheight = sumheight + interval;
 			averageweight = (sumheight - 100)*0.9;
 			System.out.println(sumheight+"   "+averageweight);
+			sumheight = sumheight + interval;
 		}
 		
 	}	
